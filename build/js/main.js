@@ -48,3 +48,9 @@ membersInput.addEventListener('change', (e) => {
     members.noUiSlider.set(e.target.value);
     price();
 });
+
+$('body').on('click', '.btn', () => {
+    $("html, body").stop().animate({scrollTop: $(document).height()}, 500, 'swing', function() { 
+        
+     });
+})
